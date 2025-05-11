@@ -11,8 +11,6 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     background-color: #0a0a0a;
-    width: 100%;
-    position: relative;
 }
 
 a {
@@ -89,9 +87,6 @@ ul {
     position: relative;
     min-height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
 }
 
 /* Background container for GIF */
@@ -123,12 +118,9 @@ ul {
 .content-wrapper {
     position: relative;
     max-width: 1400px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
     color: #fff;
-    flex: 1;
-    overflow-x: hidden;
 }
 
 /* Header styles */
@@ -237,7 +229,7 @@ nav ul {
   }
   
   .hero-profile img {
-    width: 100%;
+    width: 89vw;
     max-width: 340px;
     height: auto;
     aspect-ratio: 1 / 1;
@@ -256,23 +248,13 @@ nav ul {
     .hero-profile {
       margin-top: 2rem;
     }
-    
-    .content-wrapper {
-        padding: 0 1rem;
-    }
-    
-    .hero-profile img {
-        width: 100%;
-        max-width: 280px;
-    }
   }
 .hero {
-    min-height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
     display: flex;
     align-items: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
     font-family: "Pixelify Sans", sans-serif;
-    margin-bottom: 2rem;
 }
 
 .hero-content {
@@ -352,62 +334,57 @@ nav ul {
 }
 /* Footer*/
 footer {
-    padding: 3rem 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
     flex-direction: column;
     display: flex;
     align-items: center;
-    margin-top: auto;
-    position: relative;
-    width: 100%;
+    margin-top: 1rem;
 }
-    @media (max-width: 480px) {
-        .social-links {
-            flex-direction: row;
-            justify-content: center;
-        }
-    
-        .social-icon {
-            width: 36px;
-            height: 36px;
-        }
-    
-        .copyright {
-            font-size: 0.75rem;
-        }
-    } 
-.social-links {
-    flex-wrap: wrap;
-    gap: 1rem;
-    }
+
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .social-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: rgba(255, 251, 251, 0.829);
     color: #2c2c2c;
     transition: all 0.3s ease;
 }
 
-.social-icon:hover {
-    background-color: #ffffff;
-    color: #050505;
-    transform: translateY(-3px);
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.7;
 }
 
-.copyright {
-    font-size: 0.9rem;
-    opacity: 0.7;
+@media (max-width: 768px) {
+    footer {
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .social-links {
+        gap: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .social-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .copyright {
+        font-size: 0.75rem;
+    }
 }
 
 /* Responsive purposes ana ka sir */
@@ -460,19 +437,6 @@ footer {
     
     .work-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .hero {
-        min-height: calc(100vh - 150px);
-        padding: 3rem 0;
-    }
-    
-    .hero-profile {
-        margin: 2rem auto;
-    }
-    
-    footer {
-        padding: 2rem 1rem;
     }
 }
 
