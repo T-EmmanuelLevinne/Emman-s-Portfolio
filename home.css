@@ -247,6 +247,10 @@ nav ul {
   
     .hero-profile {
       margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .hero-profile img {
+        max-width: 270px;
     }
   }
 .hero {
@@ -334,57 +338,38 @@ nav ul {
 }
 /* Footer*/
 footer {
-    padding: 1.5rem 1rem;
+    padding: 4rem 0;
     text-align: center;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .social-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: rgba(255, 251, 251, 0.829);
     color: #2c2c2c;
     transition: all 0.3s ease;
 }
 
-.copyright {
-    font-size: 0.8rem;
-    opacity: 0.7;
+.social-icon:hover {
+    background-color: #ffffff;
+    color: #050505;
+    transform: translateY(-3px);
 }
 
-@media (max-width: 768px) {
-    footer {
-        padding: 1rem;
-        margin-top: 0.5rem;
-    }
-    
-    .social-links {
-        gap: 0.8rem;
-        margin-bottom: 0.8rem;
-    }
-    
-    .social-icon {
-        width: 32px;
-        height: 32px;
-    }
-    
-    .copyright {
-        font-size: 0.75rem;
-    }
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.7;
 }
 
 /* Responsive purposes ana ka sir */
