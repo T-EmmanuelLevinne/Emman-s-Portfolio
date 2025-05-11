@@ -229,14 +229,16 @@ nav ul {
   }
   
   .hero-profile img {
-    width: 380px;
-    height: 380px;
+    width: 89vw;
+    max-width: 340px;
+    height: auto;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #df9eec;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-  }
-  
+}
+
   @media (max-width: 768px) {
     .hero {
       flex-direction: column;
@@ -332,10 +334,17 @@ nav ul {
 }
 /* Footer*/
 footer {
-    padding: 3rem 0;
+    padding: 2rem 1rem;
     text-align: center;
-}
-
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    }
+    
+.social-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+    }
 .social-links {
     display: flex;
     justify-content: center;
