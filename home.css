@@ -44,7 +44,6 @@ ul {
     opacity: 0;
     filter: blur(10px);
     animation: welcomeText 2.5s ease-in-out forwards;
-    text-align: center;
 }
 
 @keyframes fadeOverlay {

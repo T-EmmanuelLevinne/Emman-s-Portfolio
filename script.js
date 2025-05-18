@@ -1,4 +1,4 @@
-// hulat for DOM to load
+// hulat for DOM to load // THIS JS 
 document.addEventListener('DOMContentLoaded', function() {
     // mobile menu burgir
     const menuToggle = document.querySelector('.menu-toggle');
@@ -43,22 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // mu ug add parallax effect to background
-    window.addEventListener('scroll', function() {
-        const scrollPosition = window.pageYOffset;
-        const bgContainer = document.querySelector('.bg-container');
-        
-        if (bgContainer) {
-            bgContainer.style.transform = `translateY(${scrollPosition * 0.3}px)`;
-        }
-    });
-});
-// HOME JS
+     
+ });
+// HOME JS HANTUD ABOUT.HTML
 
 
 
-// ABOUT JS
+
+// THIS KAY APIL NA SA INDEx, ABOUT, CONTACT
 document.addEventListener('DOMContentLoaded', () => {
     const bgButton = document.getElementById('change-bg-btn');
     const bgContainer = document.querySelector('.bg-container');
@@ -69,10 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
       'city.gif',
       'cafe.gif',
       'forest.gif',
-      'train.gif',
+      'room.gif',
+      'witch.gif',
       'diluc.gif',
-      'wait-train.gif',
-      'genshin-green.gif'
+      'train.gif',
+      'lumine.gif'
     ];
   
     let currentGifIndex = 0;
@@ -100,5 +93,37 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 500);
     });
   });
- 
-  
+/* projects */
+   document.addEventListener('DOMContentLoaded', function() {
+    const wrappers = document.querySelectorAll('.scrolling-wrapper');
+
+    wrappers.forEach(wrapper => {
+        const content = wrapper.querySelector('.scroll-content');
+        const clone = content.cloneNode(true);
+        wrapper.appendChild(clone);
+
+        const totalWidth = content.offsetWidth;
+
+        // Dynamically generate keyframes
+        const style = document.createElement('style');
+        const animationName = 'scroll-' + Math.random().toString(36).substr(2, 5); // unique name
+
+        style.textContent = `
+            @keyframes ${animationName} {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-${totalWidth}px); }
+            }
+
+            .scrolling-wrapper {
+                display: flex;
+                width: max-content;
+                animation: ${animationName} ${totalWidth / 50}s linear infinite;
+            }
+
+            .scrolling-wrapper:hover {
+                animation-play-state: paused;
+            }
+        `;
+        document.head.appendChild(style);
+    });
+});

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Emmanuel's Portfolio</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- welcome animation -->
+  <div class="welcome-overlay">
+    <div class="welcome-text">contact me!</div>
+  </div>
+
+  <!-- background -->
+ <div class="bg-container"></div>
+  <div class="bg-overlay"></div>
+
+  <!-- main content -->
+  <div class="container">
+    <div class="content-wrapper">
+      <header>
+        <div class="logo">PORTFOLIO
+          <button id="change-bg-btn" class="icon-btn" title="Change Background">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </button>
+        </div>
+        <div class="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects / Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Contact Section -->
+      <section id="contact-section">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="about-text">Feel free to message me through this form or connect via email or socials.</p>
+
+        <form class="contact-form" action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Email Address -->
+        <div class="contact-info">
+          <h3 class="pixel-text">Email</h3>
+          <p><a href="mailto:youremail@example.com">emmanuel.tecson@jmc.edu.ph</a></p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+          <h3 class="pixel-text">Socials</h3>
+          <a href="https://github.com/T-EmmanuelLevinne" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="soon" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+
+        <!-- Resume -->
+        <div class="resume-download">
+          <h3 class="pixel-text">Resume</h3>
+          <a href="resume.pdf" download class="btn-download"><i class="fa-solid fa-download"></i> Download Resume</a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+        <!-- footer -->
+      <footer>
+        <div class="social-links2">
+          <a href="https://www.facebook.com/shandy.wastaken.9" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://x.com/shandywastaken" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/sonataceleem/" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 Le Em Portfolio. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
